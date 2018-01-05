@@ -27,7 +27,7 @@ async function main() {
 		return link
 	}
 
-	page.goto('http://www.mangas-vostfr.pro/no-game-no-life-01-vostfr-ng0/')
+	await page.goto(process.argv[2])
 	await page.waitForSelector('.thecontent')
 
 	const episodes = []
@@ -36,7 +36,7 @@ async function main() {
 		episodes.push(await scrapEmbeds())
 	} while (await goNext())
 
-	console.log(episodes)
+	console.log(JSON.stringify(episodes))
 	await browser.close()
 }
 
