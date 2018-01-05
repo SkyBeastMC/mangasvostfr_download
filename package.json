@@ -1,0 +1,23 @@
+{
+  "name": "mangasvostfr_download",
+  "version": "1.0.0",
+  "description": "Scrap embeds from http://mangas-vostfr.pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyBeastMC/mangasvostfr_download.git"
+  },
+  "author": "SkyBeast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SkyBeastMC/mangasvostfr_download/issues"
+  },
+  "homepage": "https://github.com/SkyBeastMC/mangasvostfr_download#readme",
+  "dependencies": {
+    "puppeteer": "^0.13.0"
+  }
+}
